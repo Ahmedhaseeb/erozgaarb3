@@ -7,7 +7,7 @@ body{
 #top-menu, #bottom-menu{
 	width: 100%;
 	background-color: #333;
-	height: 40px;
+	/*height: 40px;*/
 	/*padding: 20px 0;*/
 
 }
@@ -58,4 +58,7 @@ span{
 	vertical-align: super;
 	text-decoration: line-through;
 	text-transform: uppercase;
+}
+.clearfix{
+	clear: both;
 }

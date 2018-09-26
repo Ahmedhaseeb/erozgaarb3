@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS - Float Property In Details</title>
+	<style>
+		body{
+			/*overflow: hidden;*/
+			margin: 0;
+			padding: 0;
+			font-family: Tahoma, Arial;
+			font-variant: small-caps;
+			/*background: #eec url("assets/images/bg-small.jpg") no-repeat 10px 20px fixed;*/
+
+			background-size: 50% 50%;
+			background-repeat: no-repeat;
+			background-position: 10px 20px; 
+			background-attachment: fixed; 
+/*			background-image: url("assets/images/bg-small.jpg");
+			
+			background-color: #eec; */
+
+		}
+		.wrapper{
+
+			border-radius: 5px;
+			width: 80%;
+			margin: 50px auto;
+			padding: 20px;
+			border:1px solid #000;
+			
+		}
+		.box{
+			border:1px solid #000;
+			margin-bottom: 40px;
+			height: 80px;
+			width: 100px;
+			box-sizing: border-box;
+		}
+
+		.box1{
+			float: left;
+			background-color: cyan;
+
+		}
+		.box2{
+			background-color: skyblue;
+			float:right;
+			
+		}
+
+		.box3{
+			background-color: #000;
+		}
+
+		.clearfix{
+			clear:both;
+		}
+		a{
+			/*color:white;*/
+			font-size: 20px;
+		}
+		a:visited{
+			color:red;
+		}
+		a:active{
+			color: green;
+		}
+		a:link{
+			color:yellow;
+		}
+		ul li{
+			list-style-type: disc; 
+			list-style-position: inside;
+
+			/*list-style-image: url("assets/images/bg-small.jpg"); */
+		}
+		table,tr,td,th{
+			border:1px solid #000;
+			/*border-collapse: collapse;*/
+			border-spacing: 20px;
+			/*empty-cells: hide;*/
+
+		}
+		.abc{
+			height: 100px;
+			overflow-y: scroll;
+		}
+		table{
+			width: 100%;
+			caption-side: top;
+			table-layout: fixed;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+			
+			<div class="abc">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ad recusandae, aliquam. Laboriosam sed nulla neque dolorem vero qui enim earum doloremque mollitia deserunt possimus ea consequatur, cupiditate nobis, fugiat eius perferendis dolore. Totam tenetur aliquid fugit ipsa eaque sequi quaerat doloremque ullam laboriosam vitae, porro dolores modi saepe numquam, cum repudiandae adipisci harum praesentium provident voluptate omnis, obcaecati repellendus commodi. Quibusdam vel mollitia eos non consequuntur, optio aspernatur sit tempora, iure aliquid quam. Accusantium similique eos fugiat odit assumenda officia vel autem. Voluptate facere aliquid molestiae enim totam deleniti odio ad esse ex placeat ipsam assumenda, animi possimus qui id unde ab quam, veritatis iste, quibusdam vel aspernatur at nostrum. Delectus vel commodi atque ratione mollitia hic eius molestiae deleniti voluptas est cupiditate provident explicabo maxime ullam ipsum voluptatem eveniet tenetur quidem velit quis, optio repellat quasi rem inventore? Repudiandae facilis eveniet possimus quam eum, quibusdam quod reiciendis minima ipsam accusantium! Autem repellat, nesciunt ex sit temporibus saepe ipsa voluptatibus laudantium dicta accusamus quod itaque culpa, consectetur eum dignissimos blanditiis fuga? Hic accusantium fugit omnis excepturi iste deserunt laudantium eius, velit quaerat, perferendis officiis! Iusto modi quis amet deleniti soluta, velit, itaque sint architecto fuga animi aspernatur placeat similique aperiam. Eveniet nemo qui velit cumque veritatis repudiandae nihil consequuntur hic cupiditate tenetur? Dolorem dolores voluptatum iure, maxime, porro similique. Cupiditate officia quas, dolores sit porro veritatis cum laudantium, quam enim adipisci voluptatem atque delectus neque debitis eius veniam quis et eligendi explicabo eum quibusdam minima distinctio reiciendis quisquam. Voluptatem illo, mollitia a omnis quae. Excepturi itaque fugit maiores sapiente, minima provident accusamus commodi eos hic velit eius deleniti quos, mollitia tempore est, nam suscipit quae nostrum minus quas laborum placeat quo. Suscipit minima facilis ex neque quod totam, cumque recusandae repudiandae architecto corporis perspiciatis ipsam ratione, id dolores officiis ullam consequuntur et. Blanditiis sed ab recusandae animi voluptate fugit exercitationem ducimus minima non expedita architecto in pariatur, magni adipisci veritatis corrupti nostrum perferendis culpa cupiditate itaque natus tempora sunt labore? Architecto facilis sapiente consectetur nisi ab temporibus, atque iure veniam voluptate expedita fuga error animi, quod magni enim at quidem? In corporis natus aliquam alias fugiat officia, maxime deserunt saepe obcaecati animi, quod odio! Corporis tenetur libero rem aliquid labore eveniet cupiditate, quos placeat fuga. Eveniet, quidem tempore voluptas, accusamus mollitia voluptatem, commodi, voluptatum placeat dolore accusantium dolores illo obcaecati quos dolorum veritatis dignissimos labore sunt assumenda inventore deserunt. Quas, ullam dolores vero adipisci, id fuga voluptatibus a officia reprehenderit, quam earum fugiat sunt aut. Illum ratione tempore nihil voluptates, eius fugit voluptatem in excepturi sapiente nesciunt adipisci rem nulla officiis dolorum quam pariatur cupiditate expedita repudiandae sit non, ipsum voluptas modi nemo. Impedit temporibus ad voluptate velit possimus, quia illo minus eius repudiandae distinctio, dolores. Nisi ab blanditiis dolorum necessitatibus, neque explicabo hic quam quaerat rem deleniti excepturi corporis voluptates unde, consequuntur non, doloribus eius. Maxime possimus doloribus amet dolorem, neque placeat laudantium voluptatum qui dolor dignissimos est sunt, officia modi aspernatur consequatur cumque, repellat optio. Ipsam, officiis. Maiores dolor voluptate iusto autem dolore est ea eius reiciendis perspiciatis perferendis dicta corrupti, magni hic dignissimos veritatis iure consectetur amet quia delectus sint nam exercitationem quos laborum doloremque nesciunt. Esse quidem est repellat voluptatum autem minus a distinctio porro animi nemo, aspernatur id laudantium omnis consequatur unde sequi nesciunt sint voluptate? Voluptates alias aspernatur et veritatis asperiores, autem, eum officia incidunt quas dolore quibusdam repudiandae neque iure voluptatibus nulla! Praesentium adipisci temporibus odit, maiores architecto, molestiae deserunt possimus reprehenderit nisi quis aut! Culpa, commodi magni tempore. In consequatur ipsam pariatur cum beatae doloribus modi odio odit, numquam, dolor? Adipisci aliquid laboriosam recusandae mollitia magni, dicta non consequuntur minima debitis voluptatum esse nesciunt, quia iure? Quaerat reprehenderit adipisci eius minima officiis nesciunt architecto sunt, earum sequi, mollitia velit sit, necessitatibus ducimus accusantium suscipit odit voluptate! Consequatur molestias perspiciatis dolorem hic, neque ex aspernatur voluptatibus sint sunt, sequi est quisquam, magni ipsa vero a odit nostrum harum vitae autem? A atque, laboriosam praesentium, quidem accusantium odio tempora consequuntur recusandae distinctio repellat aperiam, officia modi asperiores sit dolore delectus impedit est iste obcaecati ducimus voluptates. Temporibus amet eveniet nulla minima veniam, sunt illo debitis error consectetur fugit eligendi, accusantium, pariatur omnis in quidem ex quae eaque obcaecati natus necessitatibus ipsa a tenetur! Quae distinctio, vitae dolorem repellat quo eveniet aliquid soluta, earum alias molestiae reprehenderit illo perferendis eligendi aut accusantium maxime laborum labore nesciunt neque pariatur harum. Soluta aspernatur illo officia saepe laborum adipisci distinctio commodi voluptate, optio esse dolor voluptates asperiores quasi debitis culpa, quos quo iusto excepturi et. Fugiat, quisquam. Aspernatur, voluptatem blanditiis. Officia aut placeat nisi, temporibus architecto ducimus modi animi, reiciendis pariatur vitae eos quas, officiis recusandae voluptatem alias voluptatibus. Velit consequuntur, qui assumenda. Ea laboriosam doloremque molestiae iusto, distinctio adipisci tenetur ipsam porro assumenda, perspiciatis eum veniam quo illo corrupti officia et in sunt repellat! Quam labore ex culpa nam a! Tempore tempora quam dolorum totam molestias iure minima expedita suscipit, quo itaque ad, temporibus debitis cupiditate magnam rem voluptatum pariatur delectus, ratione error, fuga! Voluptates at nobis voluptatibus, dolorem libero saepe nostrum aut, quaerat minima quidem, delectus laudantium beatae repudiandae enim numquam. Iusto voluptatibus quibusdam, velit, tenetur amet inventore ullam iure ipsam minus cupiditate provident perspiciatis animi totam dicta! Nulla cumque, minus, reprehenderit fuga possimus explicabo, omnis facere ullam obcaecati aperiam perferendis similique sapiente quibusdam quidem perspiciatis at aut ipsa. Doloremque eveniet vel amet, aliquid ab recusandae quas, incidunt adipisci impedit voluptatem assumenda voluptas aspernatur necessitatibus, porro quo officia laboriosam, cumque accusantium quos! Sint soluta quidem quia iste officia dolores debitis eaque reiciendis excepturi nemo alias molestias, ad natus commodi esse aspernatur. Harum animi voluptatem explicabo distinctio quos neque, eveniet tempore velit quisquam sed. Esse praesentium consequatur minus, non ducimus quam eveniet nihil, libero ratione reprehenderit ullam amet ad dolores, quos porro nobis id temporibus dicta! Deleniti odit obcaecati, vitae, doloribus dignissimos perspiciatis quos ex, reprehenderit, totam voluptate iure fugit iste? Est provident itaque ea porro saepe omnis cum, suscipit, eveniet perferendis aliquid tenetur aperiam iusto!
+			</div>
+			<table>
+				<caption>Students Details</caption>
+				<thead>
+					<tr>
+						<th>Sr</th>
+						<th>Name</th>
+						<th>Email</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Adeel asdasasdasdasdasdasdasdasda</td>
+						<td>adeel@xyz.com</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Ahmad</td>
+						<td>ahmad@xyz.com</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+
+
+			<ul>
+				<li><a href="http://google.com">Open Google</a></li>
+				<li><a href="http://google.com">Open Google</a></li>
+				<li><a href="http://google.com">Open Google</a></li>
+				<li><a href="http://google.com">Open Google</a></li>
+			</ul>
+
+
+			<a href="http://google.com">Open Google</a>
+			
+			<h1 align="center">CSS - Float Property In Details</h1>
+			
+			<div class="box box1">
+				
+			</div>
+			<div class="clearfix"></div>
+			
+			
+			<div class="box box2">
+				
+			</div>
+			
+
+
+			<div class="clearfix"></div>
+			
+			
+
+			<div class="box box3">
+				
+			</div>
+			
+
+	</div>
+</body>
+</html>
