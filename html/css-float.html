@@ -34,12 +34,19 @@
 			border:1px solid #000;
 			margin-bottom: 40px;
 			height: 80px;
-			width: 100px;
+			width: 100%;
+			/*width: 100px;*/
 			box-sizing: border-box;
 		}
 
+		.box2-container::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+
 		.box1{
-			float: left;
+			/*float: left;*/
 			background-color: cyan;
 
 		}
@@ -54,7 +61,7 @@
 		}
 
 		.clearfix{
-			clear:both;
+			/*clear:both;*/
 		}
 		a{
 			/*color:white;*/
@@ -144,8 +151,9 @@
 			<div class="clearfix"></div>
 			
 			
-			<div class="box box2">
-				
+			<div class="box2-container">
+				<div class="box box2">
+				</div>
 			</div>
 			
 
