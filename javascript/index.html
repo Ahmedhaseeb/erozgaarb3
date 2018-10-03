@@ -4,18 +4,22 @@
 	<meta charset="UTF-8">
 	<title>Javascript Basic tutorial</title>
 <style>
-	h1{
-		transition: all 5s ease;
-	}
+	
 </style>
 </head>
 <body>
 
 
 	<h1>Heading</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nam id facilis, provident doloremque placeat eveniet molestias laboriosam. Optio, esse.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nam id facilis, <br> <b>provident</b> doloremque placeat eveniet molestias laboriosam. Optio, esse.</p>
 
-	<input type="text" id="color">
+
+
+	<p id="time">
+		
+	</p>
+
+	<!-- <input type="text" id="color">
 	<button onclick="
 	
 	h1 = document.getElementsByTagName('h1');
@@ -23,7 +27,24 @@
 	h1[0].style.marginLeft += '100px';
 
 
-	">Change Color</button>
-	<script src="assets/js/custom.js"></script>
+	">Change Color</button> -->
+	<!-- <script src="assets/js/custom.js"></script> -->
+
+	<!-- <script src="assets/js/loops.js"></script> -->
+
+
+	<script>
+		function setTime() {
+			time = document.getElementById("time");
+			time.innerHTML = new Date();
+		}
+		var handler = setInterval(setTime,1000);
+
+	</script>
+
+	<script src="assets/js/functions.js"></script>
+
+
+
 </body>
 </html>
