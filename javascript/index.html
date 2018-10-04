@@ -6,11 +6,45 @@
 <style>
 	
 </style>
+
 </head>
 <body>
+	
+	<div id="app">
+		<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="asdas">
 
 
-	<h1>Heading</h1>
+		<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="asdas">
+
+		<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="asdas">
+
+
+		<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="asdas">
+
+
+
+		<div id="abc">
+			
+			<p class="abc"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequuntur officiis ipsa ipsum, minus error dolor! Tenetur quas, animi tempore?</p>
+
+
+			<p class="abc"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequuntur officiis ipsa ipsum, minus error dolor! Tenetur quas, animi tempore?</p>
+
+
+			<p class="abc"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequuntur officiis ipsa ipsum, minus error dolor! Tenetur quas, animi tempore?</p>
+		</div>
+
+		<p class="abc">Fuga sunt cumque tempora, tempore ducimus quod necessitatibus. Vitae consequuntur totam ad deserunt atque. Quaerat possimus corporis maxime ex error.</p>
+
+		<p class="abc">Eligendi delectus deleniti adipisci sit, consequuntur minus molestiae, cumque inventore eveniet consectetur magni officia, architecto at qui voluptatibus repudiandae ut.</p>
+
+		<p class="abc">Distinctio velit deserunt excepturi dolor facilis amet, architecto nemo repudiandae. Laboriosam repudiandae aperiam facere ipsa odit nulla animi doloribus fugit?</p>
+
+		<p class="abc">Obcaecati repudiandae totam amet nisi cupiditate repellendus, illo debitis consequuntur eligendi consectetur magnam non quas possimus sequi optio. Quibusdam, ipsam.</p>
+
+	</div>
+
+<!-- 	<h1>Heading</h1>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nam id facilis, <br> <b>provident</b> doloremque placeat eveniet molestias laboriosam. Optio, esse.</p>
 
 
@@ -18,7 +52,7 @@
 	<p id="time">
 		
 	</p>
-
+ -->
 	<!-- <input type="text" id="color">
 	<button onclick="
 	
@@ -33,18 +67,47 @@
 	<!-- <script src="assets/js/loops.js"></script> -->
 
 
-	<script>
+	<!-- <script>
 		function setTime() {
 			time = document.getElementById("time");
 			time.innerHTML = new Date();
+			time.innerHTML = "<h1> "+ time.innerHTML +" </h1>";
 		}
 		var handler = setInterval(setTime,1000);
 
+	</script> -->
+
+	<!-- <script src="assets/js/functions.js"></script> -->
+	<script>
+
+		//getting app div
+		// var app = document.getElementById("app");
+		// //creating h1 element
+		// var myElement = document.createElement("h2");
+		// //creating text node for myElement
+		// var myText = document.createTextNode("Heading");
+		// //appending myElement with myText
+		// myElement.appendChild(myText);
+		// //appending app div with myElement
+		// app.appendChild(myElement);
+
+
+
+
+
+
 	</script>
 
-	<script src="assets/js/functions.js"></script>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+
+<script>
+	jQuery("img").each(function(){
 
 
+		console.log($(this).attr("src"));
+	});
+	// var paragraphs = $(".abc")[0];
 
+</script>
 </body>
 </html>
