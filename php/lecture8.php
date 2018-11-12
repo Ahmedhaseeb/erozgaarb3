@@ -8,25 +8,39 @@
 
 </body><?php 
 
+		
 		/**
 		* A class for handling users
 		*/
 		class User
 		{
-			public $name;
-			public $username;
-			public $password;
+			protected $name;
+			protected $username;
+			protected $password;
+
 			static $message = "Invalid Password";
+			const ENGLISH = 0;
+			const URDU = 1;
+			const GERMAN = 2;
 
 			function __construct($un,$name,$pwd){
-				$this->name = $un;
+				$this->name = $name;
+				$this->username = $un;
+				$this->password = $pwd;
 			}
 
 			function save(){
 				echo $this->name ." is saved<br>";
 			}
 
+			function set_data(){
+				$this->username = "";
+				$this->password = "";
+			}
 			
+			final function copyrights(){
+				echo "All rights Reserved<br>Developed By ABC";
+			}
 			static function message(){
 				echo self::$message;
 			}
@@ -36,12 +50,56 @@
 
 		}
 
+		$user = new User("","","");
+		// $user->name  = "Abc";
+		$user->set_data("ahmed","123");
+		var_dump($user);
 
-		$user1 = new User("abc","Ahmed Haseeb","123");
-		$user2 = new User("xyz","","");
+		/**
+		* Subscriber class
+		*/
+		class Subscriber extends User
+		{
+			public $phone;
+			public $email;
+
+			function __construct($name,$un,$pwd,$phone,$email){
+				parent::__construct($name,$un,$pwd);
+				$this->phone = $phone;
+				$this->email = $email;
+			}
+
+
+
+
+			function set_data(){
+				$this->name = "Ahmedhaseeb";
+				$this->username = "abc";
+				$this->password = "123";
+				$this->email = "abc@xyz.com";
+				$this->phone = "+923001234567";
+			}
+
+			function ChildCopyrights(){
+				echo "asdasdhjakshdasd";
+			}
+
+
+		}
+
+
+		$subscriber = new Subscriber("Ahmed","abc","123","456","abc");
+		$subscriber->set_data();
+		$subscriber->copyrights();
+		$subscriber->ChildCopyrights();
+		
+		var_dump($subscriber);
+		die();
+		// $user1 = new User("abc","Ahmed Haseeb","123");
+		// $user2 = new User("xyz","","");
 		// print_r($user1);
 		// die();
-		$user1->save();
+		// $user1->save();
 		// $user2->save();
 		
 		User::message();
